@@ -2,15 +2,18 @@
 
 Repository containing dotfiles and recommended setup instructions for development
 
-# Vim
+## Tools
 
-Why aren't you coding with Vim? Vim is the One True Editor. Repent and save yourselves.  
-Open `vim` and type `:PluginInstall`
+### Vim
+
+Why aren't you coding with Vim? Vim is the One True Editor. Repent and save yourselves.
+
+Symlink `.vim` to `~`, open `vim` and type `:PluginInstall`
 
 
-# Development setup
+## Development setup
 
-## OS X
+### OS X
 
 1. Install **[Homebrew](http://brew.sh)**  
 ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
