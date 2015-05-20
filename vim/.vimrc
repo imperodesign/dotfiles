@@ -37,6 +37,7 @@ set lazyredraw                         " redraw only when we need to.
 set showmatch                          " highlight matching [{()}]
 set list                               " show trailing whitespace
 set listchars=tab:▸\ ,trail:▫
+let g:airline_powerline_fonts = 1      " fancy fonts for vim-airline
 
 " keyboard shortcuts
 let mapleader=","
@@ -76,13 +77,12 @@ endif
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
   if ($TERM_PROGRAM == 'iTerm.app')
-    colorscheme solarized
+    colorscheme base16-default
   else
     colorscheme desert
   endif
 endif
 
-" toggle absolute/relative line numbers
 function! NumberToggle()
   if(&relativenumber == 1)
     set number
