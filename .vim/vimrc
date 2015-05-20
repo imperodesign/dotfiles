@@ -30,6 +30,7 @@ set number                             " show line numbers
 set showcmd                            " show last command in bottom bar
 set cursorline                         " highlight cursor line
 set cc=80                              " highlight column at 80 characters
+set ruler                              " line and column number of the cursor position
 filetype indent on                     " load filetype-specific indent files
 set wildignore=log/**,node_modules/**/**
 set wildmenu                           " visual autocomplete for command menu
