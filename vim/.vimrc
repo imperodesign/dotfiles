@@ -83,6 +83,7 @@ if (&t_Co == 256 || has('gui_running'))
   endif
 endif
 
+" toggle relative/absolute line numbers
 function! NumberToggle()
   if(&relativenumber == 1)
     set number
