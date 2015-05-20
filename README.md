@@ -1,5 +1,14 @@
-# setup
-Quick development machine setup for our new team members
+# dotfiles ~/.
+
+Repository containing dotfiles and recommended setup instructions for development
+
+# Vim
+
+Why aren't you coding with Vim? Vim is the One True Editor. Repent and save yourselves.  
+Open `vim` and type `:PluginInstall`
+
+
+# Development setup
 
 ## OS X
 
