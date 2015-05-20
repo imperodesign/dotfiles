@@ -1,0 +1,2 @@
+Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
