@@ -17,6 +17,7 @@ alias ..='cd ../'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
+alias vi='vim'
 
 # Open directory in OS X Finder
 finder() {
