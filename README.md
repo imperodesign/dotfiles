@@ -8,8 +8,12 @@ Repository containing dotfiles and recommended setup instructions for developmen
 
 Why aren't you coding with Vim? Vim is the One True Editor. Repent and save yourselves.
 
-Symlink `.vim` to `~`, open `vim` and type `:PluginInstall`
-
+```
+$ ln -s /path/to/dotfiles/.vim ~/.vim
+$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+$ vim
+$ :PluginInstall
+```
 
 ## Development setup
 

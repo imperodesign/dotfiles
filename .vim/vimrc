@@ -78,7 +78,7 @@ endif
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
   if ($TERM_PROGRAM == 'iTerm.app')
-    colorscheme base16-default
+    colorscheme solarized
   else
     colorscheme desert
   endif
