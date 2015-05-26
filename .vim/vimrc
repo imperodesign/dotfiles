@@ -14,16 +14,23 @@ call vundle#end()
 
 " general
 set nocompatible                       " forget vi compatibility
-set autoindent
 set autoread                           " reload files when changed on disk
 set clipboard=unnamed                  " yank and paste with the system clipboard
 set directory-=.                       " don't store swapfiles in the current directory
 set encoding=utf-8
+set backspace=2                        " fix broken backspace in some setups
 
 " tabs & spaces
-set tabstop=4                          " visual spaces after TAB
-set softtabstop=2                      " number of spaces in tab when editing
 set expandtab                          " tabs are spaces
+set shiftround                         " round indent to multiple of 'shiftwidth'
+set smartindent                        " smart indenting when starting a new line
+set autoindent                         " Copy indent from current line, over to the new line
+
+" Set the tab width
+let s:tabwidth=2
+exec 'set tabstop='    .s:tabwidth
+exec 'set shiftwidth=' .s:tabwidth
+exec 'set softtabstop='.s:tabwidth
 
 " ui config
 set number                             " show line numbers
