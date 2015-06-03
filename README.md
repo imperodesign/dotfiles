@@ -15,6 +15,10 @@ $ vim
 $ :PluginInstall
 ```
 
+### Vagrant
+
+Install Vagrant manually: http://www.vagrantup.com/downloads
+
 ## Development setup
 
 ### OS X
@@ -32,4 +36,11 @@ nvm install iojs latest
 
 # make iojs default
 nvm alias default iojs latest
+```
+
+4. Install some more tools
+```
+brew install mongodb
+brew install nginx
+brew install ansible
 ```
