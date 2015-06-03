@@ -1,8 +1,17 @@
 # dotfiles ~/.
 
-Repository containing dotfiles and recommended setup instructions for development
+Repository containing recommended dotfiles for your home directory (`~`), and  setup instructions for development tools.
 
-## Tools
+```
+git clone git@github.com:imperodesign/dotfiles.git $HOME
+
+ln -s $HOME/dotfiles/.bash_profile $HOME/.bash_profile
+ln -s $HOME/dotfiles/.vim $HOME/.vim
+```
+Take one, take 'em all.
+
+
+## Development tools
 
 ### Vim
 
@@ -19,17 +28,25 @@ $ :PluginInstall
 
 Install Vagrant manually: http://www.vagrantup.com/downloads
 
-## Development setup
+### [Homebrew](http://brew.sh) (OS X)
 
-### OS X
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-1. Install **[Homebrew](http://brew.sh)**  
-```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+### [NVM](https://github.com/creationix/nvm)
 
-2. Install **[nvm](https://github.com/creationix/nvm)**  
-```brew install nvm```
+#### OS X
+```
+brew install nvm
+```
 
-3. Install **Node.js** and **io.js**  
+#### Ubuntu
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+```
+
+### Node.js / io.js
 ```
 nvm install node stable
 nvm install iojs latest
@@ -38,7 +55,7 @@ nvm install iojs latest
 nvm alias default iojs latest
 ```
 
-4. Install some more tools
+### Other
 ```
 brew install mongodb
 brew install nginx
