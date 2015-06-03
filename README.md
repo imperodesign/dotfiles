@@ -18,11 +18,12 @@ Take one, take 'em all.
 Why aren't you coding with Vim? Vim is the One True Editor. Repent and save yourselves.
 
 ```
-$ ln -s /path/to/dotfiles/.vim ~/.vim
-$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-$ vim
-$ :PluginInstall
+ln -s /path/to/dotfiles/.vim ~/.vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim
 ```
+
+When vim open, run `:PluginInstall`
 
 ### Vagrant
 
