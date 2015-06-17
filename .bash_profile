@@ -19,6 +19,11 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias vi='vim'
 
+# Import more aliases
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
+
 # Open directory in OS X Finder
 finder() {
   open -a Finder $1
