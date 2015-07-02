@@ -91,6 +91,10 @@ if (&t_Co == 256 || has('gui_running'))
   endif
 endif
 
+" Don't copy the contents of an overwritten selection.
+nnoremap c "_c
+vnoremap p "_dP
+
 " toggle relative/absolute line numbers
 function! NumberToggle()
   if(&relativenumber == 1)
