@@ -8,7 +8,7 @@
   pl = pull
 
   # View abbreviated SHA, description, and history graph of the latest 20 commits
-  hist = log --pretty=oneline -n 20 --graph --abbrev-commit
+  hist = log --graph --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold red)[%an]%Creset' --abbrev-commit --date=relative
 
   # View the current working tree status using the short format
   st = status --short
